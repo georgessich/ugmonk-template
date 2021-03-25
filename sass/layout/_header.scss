@@ -1,0 +1,71 @@
+.header {
+
+
+    &__top {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-display-1;
+        font-size: 1.4rem;
+        line-height: 1.9;
+
+        &-text {
+            margin-right: 2rem;
+        }
+    }
+
+    &__btn {
+        font-size: 1.2rem;
+    }
+
+    &__menu {
+        padding: 4rem;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 3rem;
+        font-size: 1.7rem;
+    }
+
+    &__link:link,
+    &__action-link:link,
+    &__link:visited,
+    &__action-link:visited {
+        color: $font-dark-1;
+        
+        transition: all .2s;
+    }
+
+    &__link:hover,
+    &__action-link:hover {
+        border-bottom: 1px solid #000;
+    }
+
+    &__action {
+        display: grid;
+        grid-template-columns: repeat(4, min-content);
+        grid-column-gap: 1rem;
+        align-items: center;
+        font-size: 1.7rem;
+        svg {
+            margin-top: 1px;
+            width: 1.7rem;
+            height: 1.7rem;
+        }
+        &-item {
+            padding-right: 1rem;
+            border-right: 1px solid #000;
+        }
+    }
+}
