@@ -11,9 +11,12 @@
 }
 
 .hero__btn {
+    padding-top: 1rem;
     color: #fff;
-    font-size: inherit;
+    font-size: 1.5rem;
     outline: none;
     border: none;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
     background-color: transparent;
 }

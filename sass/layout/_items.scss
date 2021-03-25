@@ -1,0 +1,21 @@
+.items {
+    padding-top: 4.5rem;
+    &__nav-list {
+        display: grid;
+        grid-template-columns: repeat(6, max-content);
+        grid-column-gap: 5rem;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: $font-light-1;
+        transition: all .2s;
+    }
+
+    &__link:hover {
+        color: $font-dark-2;
+        border-bottom: 1px solid #1a1a1a;
+    }
+}
