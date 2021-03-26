@@ -1,0 +1,48 @@
+.items__cards {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 5rem;
+}
+
+.items__card {
+    display: grid;
+    position: relative;
+    grid-row-gap: 1rem;
+    &-img--front {
+        transition: all .4s ease-in;
+        &:hover {
+            opacity:0;
+        }
+    }
+
+    &-img--back {
+        position: absolute;
+        opacity: 0;
+        transition: all .4s ease-in;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &-name:link,
+    &-name:visited {
+        padding-top: 1rem;
+        color: $font-dark-2;
+        font-size: 1.5rem;
+
+        span {
+            color: $font-light-2;
+        }
+    }
+
+    &-price {
+        font-size: 1.3rem;
+        color: $font-grey;
+
+
+        span {
+            color: $font-red;
+        }
+    }
+}

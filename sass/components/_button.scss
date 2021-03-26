@@ -5,6 +5,11 @@
     cursor: pointer;
     transition: all .3s;
 
+
+    &-lg {
+        font-size: 2rem;
+        padding: 1.8rem 6.1rem;
+    }
     &:hover {
         transform: translateY(-3px);
     }
@@ -19,4 +24,10 @@
     cursor: pointer;
     border-bottom: 1px solid #fff;
     background-color: transparent;
+}
+
+.btn-wrapper {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
 }
