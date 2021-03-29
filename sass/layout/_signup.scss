@@ -1,0 +1,65 @@
+.signup{
+    background-color: $color-display-1;
+
+    &__wrap {
+        padding-top: 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 3.4rem;
+    }
+    &__text {
+        padding-top: 1.9rem;
+        font-size: 1.6rem;
+        text-align: center;
+        width: 30%;
+    }
+
+    &__form {
+        padding-top: 6rem;
+        display: flex;
+        margin-bottom: 10rem;
+    }
+
+    &__email {
+        display: block;
+        font-size: 1.6rem;
+        padding: 1.1rem 1.8rem;
+        border: none;
+        transition: all .2s;
+        
+        &:focus {
+            outline: none;
+        }
+        &:focus:invalid {
+            outline: none;
+            border-bottom: 1px solid $font-red;
+        }
+    }
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: 0.7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__email:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+    &__btn {
+        width: 6.6rem;
+        height: 4.1rem;
+        background-color: #fff;
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+}

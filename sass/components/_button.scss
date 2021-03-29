@@ -26,6 +26,17 @@
     background-color: transparent;
 }
 
+
+.sale-btn, 
+.shop__btn,
+.gather-btn {
+    color: $font-dark-2;
+    border-bottom: 1px solid $font-dark-2;
+    padding-top: 4rem;
+    align-self: flex-start;
+    font-size: 1.6rem;
+}
+
 .btn-wrapper {
     padding-top: 10rem;
     display: flex;

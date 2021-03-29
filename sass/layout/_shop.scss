@@ -1,0 +1,15 @@
+.shop {
+    padding-top: 11rem;
+
+    &__categories {
+        padding-top: 12rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 11rem;
+        grid-row-gap: 7rem;
+    }
+
+    &__objects {
+        grid-column: 1 / -1;
+    }
+}

@@ -1,0 +1,42 @@
+.footer {
+    background-color: $color-display-3;
+
+    &__content {
+        padding-top: 8.5rem;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__nav {
+        flex: 1;
+        
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-row-gap: 2rem;
+        grid-column-gap: 16rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        font-size: 1.5rem;
+        color: $font-dark-2;
+    }
+
+
+
+    &__social {
+
+        &-link {
+
+            svg {
+                width: 3rem;
+                height: 3rem;
+            }
+            
+        }
+    }
+}

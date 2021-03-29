@@ -1,0 +1,27 @@
+.gather {
+    margin-top: 15rem;
+    background-color: $color-display-1;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem;
+    }
+
+    &__title {
+        background-color: $color-display-3;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8rem;
+    }
+
+
+    &__text {
+        padding-top: 2rem;
+        font-size: 1.5rem;
+    }
+}
