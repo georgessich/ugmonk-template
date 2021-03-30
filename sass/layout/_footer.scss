@@ -5,7 +5,8 @@
         padding-top: 8.5rem;
         display: flex;
         justify-content: space-between;
-
+        flex-wrap: wrap;
+        padding-bottom: 5rem;
     }
 
     &__nav {
@@ -20,6 +21,7 @@
         grid-column-gap: 16rem;
     }
 
+
     &__link:link,
     &__link:visited {
         font-size: 1.5rem;
@@ -27,9 +29,14 @@
     }
 
 
+    &__link:hover {
+        border-bottom: 1px solid #000;
+    }
+
 
     &__social {
-
+        align-self: flex-end;
+        margin-left: -9rem;
         &-link {
 
             svg {
@@ -38,5 +45,25 @@
             }
             
         }
+    }
+
+    &__copy {
+        display: flex;
+    }
+
+    &__wrap {
+        display: grid;
+        grid-template-rows: repeat(2, min-content);
+    }
+
+    &__logo {
+        
+        height: 50%;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        max-width: 24rem;
+        margin-bottom: 2rem;
     }
 }

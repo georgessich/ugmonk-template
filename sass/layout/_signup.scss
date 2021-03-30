@@ -61,5 +61,10 @@
         background-color: #fff;
         border: 1px solid #000;
         cursor: pointer;
+        transition: all .4s;
+        &:hover {
+            background-color: #000;
+            color: #ffffff;
+        }
     }
 }
